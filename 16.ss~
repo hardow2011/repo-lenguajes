@@ -1,0 +1,4 @@
+(define cube-or-sqrt (lambda (x)
+                       (if (< x 0)
+                           (expt x 3)
+                           (sqrt x))))

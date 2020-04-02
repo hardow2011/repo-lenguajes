@@ -1,0 +1,16 @@
+(define f1 (lambda (x)
+             (if (< x 0)
+                 (- (cos(+ x 2)) (sin(/ x 2)))
+                 (+ (sin(* x 2)) (cos 2)))))
+
+(define (f2 x)
+  (cond ((< x -1) (exp (* x -1)))
+        ((and (>= x -1) (<= x 1)) (exp 1))
+        ((> x 1) (exp(sqrt x)))))
+
+
+(define lst '(-2 -1 0 1 2))
+
+(map f1 lst)
+
+(map f2 lst)
